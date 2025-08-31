@@ -1,0 +1,180 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "format:LESSON-{####}",
+  "creation": "2025-08-31 06:55:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "title",
+    "student",
+    "teacher",
+    "column_break_3",
+    "scheduled_time",
+    "duration",
+    "status",
+    "section_break_7",
+    "lesson_plan",
+    "materials",
+    "column_break_10",
+    "meet_link",
+    "recording_link",
+    "section_break_13",
+    "homework",
+    "notes",
+    "column_break_16",
+    "student_feedback",
+    "teacher_feedback"
+  ],
+  "fields": [
+    {
+      "fieldname": "title",
+      "fieldtype": "Data",
+      "label": "Lesson Title",
+      "reqd": 1
+    },
+    {
+      "fieldname": "student",
+      "fieldtype": "Link",
+      "label": "Student",
+      "options": "ESL Student",
+      "reqd": 1
+    },
+    {
+      "fieldname": "teacher",
+      "fieldtype": "Link",
+      "label": "Teacher",
+      "options": "User"
+    },
+    {
+      "fieldname": "column_break_3",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "scheduled_time",
+      "fieldtype": "Datetime",
+      "label": "Scheduled Time",
+      "reqd": 1
+    },
+    {
+      "fieldname": "duration",
+      "fieldtype": "Int",
+      "label": "Duration (minutes)",
+      "default": 60
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Scheduled\nIn Progress\nCompleted\nCancelled\nRescheduled",
+      "default": "Scheduled"
+    },
+    {
+      "fieldname": "section_break_7",
+      "fieldtype": "Section Break",
+      "label": "Lesson Details"
+    },
+    {
+      "fieldname": "lesson_plan",
+      "fieldtype": "Text Editor",
+      "label": "Lesson Plan"
+    },
+    {
+      "fieldname": "materials",
+      "fieldtype": "Small Text",
+      "label": "Materials Needed"
+    },
+    {
+      "fieldname": "column_break_10",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "meet_link",
+      "fieldtype": "Data",
+      "label": "Google Meet Link",
+      "read_only": 1
+    },
+    {
+      "fieldname": "recording_link",
+      "fieldtype": "Data",
+      "label": "Recording Link"
+    },
+    {
+      "fieldname": "section_break_13",
+      "fieldtype": "Section Break",
+      "label": "Homework & Notes"
+    },
+    {
+      "fieldname": "homework",
+      "fieldtype": "Text Editor",
+      "label": "Homework Assignment"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Text Editor",
+      "label": "Lesson Notes"
+    },
+    {
+      "fieldname": "column_break_16",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "student_feedback",
+      "fieldtype": "Rating",
+      "label": "Student Rating"
+    },
+    {
+      "fieldname": "teacher_feedback",
+      "fieldtype": "Small Text",
+      "label": "Teacher Feedback"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2025-08-31 06:55:00.000000",
+  "modified_by": "Administrator",
+  "module": "Olya Bootstrap",
+  "name": "ESL Lesson",
+  "naming_rule": "Expression",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "ESL Teacher",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "ESL Administrator",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "role": "ESL Student"
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1,
+  "track_seen": 1
+}
+
