@@ -1,0 +1,142 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "field:student_name",
+  "creation": "2025-08-31 06:55:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "student_name",
+    "email",
+    "phone",
+    "column_break_4",
+    "teacher",
+    "level",
+    "goals",
+    "section_break_8",
+    "timezone",
+    "preferred_schedule",
+    "column_break_11",
+    "emergency_contact",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "student_name",
+      "fieldtype": "Data",
+      "label": "Student Name",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "email",
+      "fieldtype": "Data",
+      "label": "Email",
+      "options": "Email",
+      "reqd": 1
+    },
+    {
+      "fieldname": "phone",
+      "fieldtype": "Data",
+      "label": "Phone Number"
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "teacher",
+      "fieldtype": "Link",
+      "label": "Assigned Teacher",
+      "options": "User"
+    },
+    {
+      "fieldname": "level",
+      "fieldtype": "Select",
+      "label": "English Level",
+      "options": "A1 - Beginner\nA2 - Elementary\nB1 - Intermediate\nB2 - Upper Intermediate\nC1 - Advanced\nC2 - Proficient"
+    },
+    {
+      "fieldname": "goals",
+      "fieldtype": "Small Text",
+      "label": "Learning Goals"
+    },
+    {
+      "fieldname": "section_break_8",
+      "fieldtype": "Section Break",
+      "label": "Schedule & Contact"
+    },
+    {
+      "fieldname": "timezone",
+      "fieldtype": "Select",
+      "label": "Timezone",
+      "options": "UTC\nAmerica/New_York\nAmerica/Los_Angeles\nEurope/London\nEurope/Paris\nAsia/Tokyo\nAsia/Shanghai\nAustralia/Sydney"
+    },
+    {
+      "fieldname": "preferred_schedule",
+      "fieldtype": "Small Text",
+      "label": "Preferred Schedule"
+    },
+    {
+      "fieldname": "column_break_11",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "emergency_contact",
+      "fieldtype": "Data",
+      "label": "Emergency Contact"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Text",
+      "label": "Additional Notes"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2025-08-31 06:55:00.000000",
+  "modified_by": "Administrator",
+  "module": "Olya Bootstrap",
+  "name": "ESL Student",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "ESL Teacher",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "ESL Administrator",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "role": "ESL Student",
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1
+}
+
