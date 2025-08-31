@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include olya_bootstrap *.css
+recursive-include olya_bootstrap *.csv
+recursive-include olya_bootstrap *.html
+recursive-include olya_bootstrap *.ico
+recursive-include olya_bootstrap *.js
+recursive-include olya_bootstrap *.json
+recursive-include olya_bootstrap *.md
+recursive-include olya_bootstrap *.png
+recursive-include olya_bootstrap *.py
+recursive-include olya_bootstrap *.svg
+recursive-include olya_bootstrap *.txt
+
